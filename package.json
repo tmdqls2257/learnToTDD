@@ -1,0 +1,26 @@
+{
+  "name": "learntotdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sum.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmdqls2257/learnToTDD.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tmdqls2257/learnToTDD/issues"
+  },
+  "homepage": "https://github.com/tmdqls2257/learnToTDD#readme",
+  "devDependencies": {
+    "jest": "^27.4.5"
+  },
+  "dependencies": {
+    "@types/jest": "^27.0.3"
+  }
+}
