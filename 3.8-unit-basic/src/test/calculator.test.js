@@ -15,9 +15,18 @@ describe('Calculator', () => {
     expect(cal.value).toBe(3)
   })
 
-  it('clear를 하면 this.value는 0이여야 합니다.', () => {
-    cal.clear()
-    expect(cal.value).toBe(0)
+  describe('add', () => {
+    it('clear를 하면 this.value는 0이여야 합니다.', () => {
+      cal.clear()
+      expect(cal.value).toBe(0)
+    })
+
+    it('value가 100보다 크다면 에러를 던져야한다.', () => {
+      // 함수를 실행하고 그 실행해준 결과가 에러라면 에러메세지가 맞는지 확인
+      expect(() => {
+        cal.add(101)
+      }).toThrow('Value can not be greater than 100')
+    })
   })
 
   it('add함수를 사용하면 ', () => {
